@@ -1,0 +1,18 @@
+{
+  "name": "comparator",
+  "version": "1.0.0",
+  "description": "Compare two spoj profiles.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "SB",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "*",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "request": "*"
+  }
+}

@@ -1,0 +1,42 @@
+.App{
+    margin: 10px;
+}
+
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+    color: steelblue;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+.footer{
+    background-color: #EEE4E9;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+div>.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background-color: cornsilk;
+    border-radius: 0.5rem;
+}
+
+.card {
+    margin: 15px;
+    padding: 15px;
+}
+
+div>.card {
+    color: blue;
+    font-family: Caveat Brush
+}
+
+div>.cardheader {
+    font-family: Fredoka+One
+}
