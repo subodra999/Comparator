@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import { Loading } from './Loading';
 import { spojurl } from '../shared/baseUrl';
 import { Card, CardBody, CardHeader, Button, UncontrolledCollapse, Badge } from 'reactstrap';
@@ -45,7 +46,7 @@ function Display({ details }) {
         <div className="container">
             <div className="row">
                 <Button outline color="warning" size="lg" block id="user1P" style={{ marginBottom: '1rem' }}>
-                    {details.user1_username} unique solved
+                    {details.user1_username} unique solved : count = {details.user1_uncnt}
                 </Button>
                 <UncontrolledCollapse toggler="#user1P">
                     <Card>
@@ -57,7 +58,7 @@ function Display({ details }) {
             </div>
             <div className="row">
                 <Button outline color="warning" size="lg" block id="user2P" style={{ marginBottom: '1rem' }}>
-                    {details.user2_username} unique solved
+                    {details.user2_username} unique solved : count = {details.user2_uncnt}
                 </Button>
                 <UncontrolledCollapse toggler="#user2P">
                     <Card>

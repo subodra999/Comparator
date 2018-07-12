@@ -32,6 +32,7 @@ class Header extends Component {
                             <NavItem>
                                     <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
+                            
                         </Nav>
                     </Collapse>
                 </div>

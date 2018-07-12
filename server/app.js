@@ -3,7 +3,7 @@ const spoj = require('./routes/spoj_comparator');
 
 var app = express();
 
-const port = process.env.port || 3001;
+const port = process.env.port || 5000;
 
 app.use(function(req, res, next) {
     res.header("access-control-allow-origin", "*");
