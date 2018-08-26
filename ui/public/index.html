@@ -5,52 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
 
-
-    <script type='text/javascript'>
-      //some default pre init
-      var Countly = Countly || {};
-      Countly.q = Countly.q || [];
-      
-      //provide countly initialization parameters
-      Countly.app_key = '707d6339e7d4b75ebce1fdc6ee518dc62cea725c';
-      Countly.url = 'http://localhost';
-      
-      Countly.q.push(['track_sessions']);
-      Countly.q.push(['track_location']);
-      Countly.q.push(['track_pageview']);
-      Countly.q.push(['track_clicks']);
-      Countly.q.push(['track_scrolls']);
-      Countly.q.push(['track_errors']);
-      Countly.q.push(['track_links']);
-      Countly.q.push(['track_forms']);
-      Countly.q.push(['collect_from_forms']);
-      
-      //load countly script asynchronously
-      (function() {
-         var cly = document.createElement('script'); cly.type = 'text/javascript';
-         cly.async = true;
-         //enter url of script here
-         cly.src = 'http://localhost/sdk/web/countly.min.js';
-         cly.onload = function(){Countly.init()};
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
-      })();
-
-          // Countly custom event
-        function clickEvent(ob){
-          console.log("object"+ob.id);
-          
-            Countly.q.push(['add_event',{
-                key:"asyncButtonClick", 
-                segmentation: {
-                    "id": ob.id
-                }
-            }]);
-    }
-      </script>
-
-
-
-
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -104,10 +58,6 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript><img src='http://localhost/pixel.png?app_key=707d6339e7d4b75ebce1fdc6ee518dc62cea725c&begin_session=1'/></noscript>
-    
-
-    <input type="button" id="asyncTestButton" onclick="clickEvent(this)" value="Test Button" />
     <div id="root"></div>
     <!--
       This HTML file is a template.
